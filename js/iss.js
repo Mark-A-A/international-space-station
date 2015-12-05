@@ -13,9 +13,19 @@ $(document).ready(function(){
     var colDiv = $("<div>").addClass("col-md-4");
     var pictureDiv = $("<div>").addClass("picture");
     var tweetPic = $("<img>").attr("src",  tweeter.user.profile_image_url)
-    var twitterName;
-    var tweetedWhen;
-    var tweet;
+    
+    var flickrKey = "a98b6af74d3ee7e5208a8f5a584758fa";
+
+    /* flickr.url
+    https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+  or
+https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_[mstzb].jpg
+  or
+https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{o-secret}_o.(jpg|gif|png)
+  */
+
+    var flickr
+    var flickr
 
     console.log(tweetPic);
     console.log(colDiv);
