@@ -13,6 +13,13 @@ $(document).ready(function() {
       success: googleApiSuccessHandler
     });
 
+//variables for API's
+  var issApiUrl = "https://api.wheretheiss.at/v1/satellites/25544/positions?";
+  issApiUrl += "timestamps=1436029892,1436029902";
+  issApiUrl += "&units=miles";
+
+//end of variables for API's
+
 
   /* for (var i = 0; i < window.tweets.length; i++) {
     var tweetCol = tweetBuild(window.tweets[i]);
