@@ -21,7 +21,7 @@ $(document).ready(function() {
 //end of variables for API's
 
 
-  /* for (var i = 0; i < window.tweets.length; i++) {
+  for (var i = 0; i < window.tweets.length; i++) {
     var tweetCol = tweetBuild(window.tweets[i]);
     console.log(tweetCol);
     $(".row").append(tweetCol)
