@@ -1,9 +1,20 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  
+  $(".btn-default").on("click", function(e){
+    e.preventDefault();
+    var userAddress = $("#userAddress").val();
+    var googleApiUrl = "https://maps.googleapis.com/maps/api/js?key";
+    googleApiUrl += "key=AIzaSyCKt8nUFQUilV2yXtJIilkTUp3DSxanQcw";
+    googleApiUrl += "&address=" + userAddress;
 
-  alert("Hello World");
+    $.ajax({
+      type: "GET",
+      url: googleApiUrl,
+      success: googleApiSuccessHandler
+    });
 
 
-  for (var i = 0; i < window.tweets.length; i++) {
+  /* for (var i = 0; i < window.tweets.length; i++) {
     var tweetCol = tweetBuild(window.tweets[i]);
     console.log(tweetCol);
     $(".row").append(tweetCol)
@@ -23,6 +34,8 @@ $(document).ready(function(){
     pictureDiv.append(tweetPic);
 
     return colDiv;
-  }; //end of function
+  }; */
+
+
 
 });
