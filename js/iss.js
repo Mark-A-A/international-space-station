@@ -1,5 +1,6 @@
 $(document).ready(function() {
   
+  // Google Maps Api code
   $(".btn-default").on("click", function(e){
     e.preventDefault();
     var userAddress = $("#userAddress").val();
@@ -12,7 +13,7 @@ $(document).ready(function() {
       url: googleApiUrl,
       success: googleApiSuccessHandler
     });
-
+    // End of Google Maps Api code
 
   /* for (var i = 0; i < window.tweets.length; i++) {
     var tweetCol = tweetBuild(window.tweets[i]);
